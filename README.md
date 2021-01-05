@@ -8,6 +8,8 @@ Used to fill in a google form automatically  that I had to fill in for a class i
 3.  Download any code editor that can run programs. I used VS code https://code.visualstudio.com/
 4.  Download chrome driver https://chromedriver.chromium.org/downloads
 5.  Copy the code into the code editor
+      ---The instructions below tells you what needs to be changed---
+      lines: 10, 11, 13, 37, 41, 45, and 53
 6.  on line 10 you will see something like "user = 'student id'" Change "student id" to your student id 
 7.  on line 11 you will see something like "passw = 'password'" Change the "password" to you password
 8.  on line 13 you will see something like "email='firstname.lastname@student.tdsb.on.ca'" change "firstname.lastname@student.tdsb.on.ca" to yout tdsb email
