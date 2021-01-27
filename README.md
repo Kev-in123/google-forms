@@ -19,4 +19,4 @@ Used to fill in a google form automatically  that I had to fill in for a class i
 12. on line 53 I made it choose option "a" change "//*[@id="mG61Hd"]/div[2]/div/div[2]/div[4]/div/div/div[2]/div/div[2]/div[3]" to 
    "//*[@id="mG61Hd"]/div[2]/div/div[2]/div[4]/div/div/div[2]/div/div[2]/div[4]"
    
-   ---NOTE THAT ThIS DOES NOT APPLY TO ALL FORMS---
+   ---NOTE THAT THIS DOES NOT APPLY TO ALL FORMS---
