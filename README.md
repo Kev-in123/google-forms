@@ -17,6 +17,5 @@ Used to fill in a google form automatically  that I had to fill in for a class i
 10. on line 41 you will see something like "firstName = 'First name'" change "First name" to your first name
 11. on line 45 you will see something like "lastName = 'Last name'" change "Last name" to your last name
 12. on line 53 I made it choose option "a" change "//*[@id="mG61Hd"]/div[2]/div/div[2]/div[4]/div/div/div[2]/div/div[2]/div[3]" to 
-   "//*[@id="mG61Hd"]/div[2]/div/div[2]/div[4]/div/div/div[2]/div/div[2]/div[4]"
-   
+   "//*[@id="mG61Hd"]/div[2]/div/div[2]/div[4]/div/div/div[2]/div/div[2]/div[4]" to make it option "b"   
    ---NOTE THAT THIS DOES NOT APPLY TO ALL FORMS---
