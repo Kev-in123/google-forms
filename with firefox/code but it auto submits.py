@@ -1,8 +1,6 @@
 from selenium import webdriver # first 4 lines are used to open links and send data
-import time
-import webbrowser
+import time, schedule
 from selenium.webdriver.common.keys import Keys
-import schedule
 
 # defines a function so its easier to use
 def attendance():
