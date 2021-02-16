@@ -67,8 +67,5 @@ def attendance():
 # to schedule code
 schedule.every().day.at("16:10").do(attendance)
 print("ok")
-# make it run everyday
-while True:
-  schedule.run_pending()
-  time.sleep(1)
+
   
