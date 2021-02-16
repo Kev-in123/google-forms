@@ -66,6 +66,4 @@ def attendance():
     print("Unable to submit form")
 # to schedule code
 schedule.every().day.at("16:10").do(attendance)
-print("ok")
-
-  
+ 
