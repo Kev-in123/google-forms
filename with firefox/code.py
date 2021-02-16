@@ -4,7 +4,7 @@ import webbrowser
 from selenium.webdriver.common.keys import Keys
 
 web = webdriver.Firefox(executable_path="C:\\geckodriver.exe")
-web.get("https://forms.gle/Fccr1YANeRW6Usfu5")# used for form link
+web.get("https://forms.gle/Fccr1YANeRW6Usfu5") # used for form link
 
 id = 'student id' # this is your student id
 passw = 'password' # this is your password
