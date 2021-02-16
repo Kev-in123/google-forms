@@ -1,6 +1,5 @@
 from selenium import webdriver # first 4 lines are used to open links and send data
 import time
-import webbrowser
 from selenium.webdriver.common.keys import Keys
 
 web = webdriver.Chrome("C:\\chromedriver.exe" ) # used to open chrome double '\' to specify its a path
