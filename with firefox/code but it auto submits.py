@@ -6,7 +6,7 @@ import schedule
 
 # defines a function so its easier to use
 def attendance():
-  web = webdriver.Firefox(executable_path="C:\\geckodriver.exe")
+  web = webdriver.Firefox(executable_path="C:\\geckodriver.exe") # used to open firefox double '\' to specify its a path
   web.get("https://forms.gle/Fccr1YANeRW6Usfu5") # used for form link
 
   id = 'student id' # this is your student id
