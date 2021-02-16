@@ -1,4 +1,4 @@
-Used to fill in a google form automatically that I had to fill in for a class in the mornings.
+Used to fill in a google form automatically that I had to fill in for class in the mornings.
 
 usage:
 
