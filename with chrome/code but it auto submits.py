@@ -5,7 +5,7 @@ from selenium.webdriver.common.keys import Keys
 import schedule
 
 def attendance():
-  web = webdriver.Chrome("C:\\chromedriver.exe" ) # used to open chrome. double '\' to specify its a path
+  web = webdriver.Chrome("C:\\chromedriver.exe" ) # used to open chrome double '\' to specify its a path
   web.get('https://forms.gle/Fccr1YANeRW6Usfu5') # used for form link
 
   id = 'student id' # this is your student id
