@@ -9,7 +9,6 @@ usage:
     4.  Download geckodriver (firefox) https://github.com/mozilla/geckodriver/releases or chromedriver https://chromedriver.chromium.org/downloads 
     5.  Copy the code into the code editor (I don't recommend this as you don't learn anything)
     6.  Change 'student id', 'passwrod', 'firstname.lastname@student.tdsb.on.ca', 'First name', and 'Last name' to your data and run the program
-    7.  You're done!
    
 If you encounter a "Unable to locate element" error add "time.sleep(3)" above the line with the error (note: the '3' can be changed) and re-run it.
 
