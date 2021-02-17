@@ -9,10 +9,12 @@ def attendance():
 
   id = 'student id' # this is your student id
   passw = 'password' # this is your password
-
   email='firstname.lastname@student.tdsb.on.ca' # this is your student email there might be a number
-  emailpath=web.find_element_by_xpath('//*[@id="identifierId"]') # used to find email textbox
-  emailpath.send_keys(email) # used to send email
+
+  try:
+    emailpath=web.find_element_by_xpath('//*[@id="identifierId"]') # uses "try... except..." to get the input box because you might get a different sign-in page (I found this problem before)
+  except:
+    emailpath=web.find_element_by_xpath('//*[@id="Email"]')# used to send email
 
   Submit_Mail = web.find_element_by_xpath('//*[@id="identifierNext"]/div/button/div[2]') # used to find submit button
   Submit_Mail.click() # used to click submit button
@@ -66,6 +68,6 @@ The code that isnt needed:
     print("Form submitted successfully ")
   except:
     print("Unable to submit form")
-# to schedule code
-schedule.every().day.at("16:10").do(attendance)
+# to schedule code note: It uses 24 hour local (device) time and if its before 12:00 you must add a zero at the front (shown below)
+schedule.every().day.at("08:45").do(attendance)
 
