@@ -63,6 +63,6 @@ def attendance():
     print("Form submitted successfully ")
   except:
     print("Unable to submit form")
-# to schedule code
-schedule.every().day.at("16:10").do(attendance)
+# to schedule code note: It uses 24 hour local (device) time and if its before 12:00 you must add a zero at the front (shown below)
+schedule.every().day.at("08:45").do(attendance)
  
