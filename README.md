@@ -1,5 +1,5 @@
-Used to fill in a google form automatically that I had to fill in for class in the mornings.
-
+Use this code to fill in a google form automatically.
+The form I used in the code is a replica of a previous attendance form.
 usage:
     
     1.  Go to https://www.python.org/downloads/ and download python 
