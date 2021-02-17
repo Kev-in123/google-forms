@@ -1,5 +1,6 @@
 Use this code to fill in a google form automatically.
 The form I used in the code is a replica of a previous attendance form.
+
 usage:
     
     1.  Go to https://www.python.org/downloads/ and download python 
@@ -10,3 +11,5 @@ usage:
     6.  Change 'student id', 'passwrod', 'firstname.lastname@student.tdsb.on.ca', 'First name', and 'Last name' to your data and run the program
     7.  You're done!
    
+If you encounter a "Unable to locate element" error add "time.sleep(3)" above the line with the error (note: the '3' can be changed) and re-run it.
+Althought not nesscary, I recommend you add "time.sleep(3)" above the lines of code that locate elements if you are using the one that submits everyday because i found that the "Unable to locate element" error occured more on the every day one and yes it does make submission slower.
