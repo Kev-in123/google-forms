@@ -11,8 +11,11 @@ def attendance():
   passw = 'password' # this is your password
 
   email='firstname.lastname@student.tdsb.on.ca' # this is your student email there might be a number
-  emailpath=web.find_element_by_xpath('//*[@id="identifierId"]') # used to find email textbox
-  emailpath.send_keys(email) # used to send email
+
+  try:
+    emailpath=web.find_element_by_xpath('//*[@id="identifierId"]') # uses "try... except..." to get the input box because you might get a different sign-in page (I found this problem before)
+  except:
+    emailpath=web.find_element_by_xpath('//*[@id="Email"]')
 
   Submit_Mail = web.find_element_by_xpath('//*[@id="identifierNext"]/div/button/div[2]') # used to find submit button
   Submit_Mail.click() # used to click submit button
@@ -48,11 +51,9 @@ def attendance():
   RadioCohort = web.find_element_by_xpath('//*[@id="mG61Hd"]/div[2]/div/div[2]/div[4]/div/div/div[2]/div/div[1]/div[1]/div[1]') # used to find cohort dropdown menu
   RadioCohort.click() # used to click and open cohort dropdown menu
 
-  time.sleep(2) # lets options load before continue running code or else error will occur 
   Cohort= web.find_element_by_xpath('//*[@id="mG61Hd"]/div[2]/div/div[2]/div[4]/div/div/div[2]/div/div[2]/div[3]') # used to find your cohort
   Cohort.click() # used to select your cohort
 
-  time.sleep(2) # I explained this too many times so I'll let you figure out this one 
   Submit = web.find_element_by_xpath('//*[@id="mG61Hd"]/div[2]/div/div[3]/div[1]/div/div/span') # used to find submit button
   Submit.click() # used to click submit button
 # to check if the form submission wwas successful
