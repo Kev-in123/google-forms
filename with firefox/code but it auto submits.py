@@ -1,4 +1,4 @@
-from selenium import webdriver # first 4 lines are used to open links and send data
+from selenium import webdriver # first 3 lines are used to import stuff
 import time, schedule
 from selenium.webdriver.common.keys import Keys
 
