@@ -12,8 +12,3 @@ usage:
    
 If you encounter a "Unable to locate element" error, add "time.sleep(3)" above the line with the error (note: the '3' can be changed) and re-run it.
 
-
-TODO:
-    - [x] For firefox users
-    - [ ] For Edge users
-    - [ ] Run it for a few days straight
