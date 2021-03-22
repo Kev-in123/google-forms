@@ -6,4 +6,4 @@
 ### Done ✓
 
 - [x] Firefox users
-- [x] Run it for a few days longer 
+- [x] Run it for a few consecutive days
