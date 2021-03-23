@@ -1,5 +1,6 @@
-from selenium import webdriver
+from selenium import webdriver # first 3 lines are used to import stuff
 import time
+from selenium.webdriver.common.keys import Keys
 
 web = webdriver.Edge("C:\\msedgedriver.exe")
 web.get('https://forms.gle/Fccr1YANeRW6Usfu5') # used for form link
