@@ -17,8 +17,8 @@ def attendance():
   except:
     emailpath=web.find_element_by_xpath('//*[@id="Email"]')
 
-  Submit_Mail = web.find_element_by_xpath('//*[@id="identifierNext"]/div/button/div[2]') # used to find submit button
-  Submit_Mail.click() # used to click submit button
+  emailpath.send_keys(email) # sends email
+  emailpath.send_keys(Keys.ENTER) # signs you in # used to click submit button
 
   time.sleep(1) # lets page load before continue running code or else error will occur
   username_textbox = web.find_element_by_xpath('//*[@id="UserName"]') # this is your student id 
