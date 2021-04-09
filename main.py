@@ -45,8 +45,10 @@ last.send_keys(lastName) # used to send last name
 RadioCohort = web.find_element_by_xpath('//*[@id="mG61Hd"]/div[2]/div/div[2]/div[4]/div/div/div[2]/div/div[1]/div[1]/div[1]') # used to find cohort dropdown menu
 RadioCohort.click() # used to click and open cohort dropdown menu
 
+time.sleep(0.1)
 Cohort= web.find_element_by_xpath('//*[@id="mG61Hd"]/div[2]/div/div[2]/div[4]/div/div/div[2]/div/div[2]/div[3]') # used to find your cohort
 Cohort.click() # used to select your cohort
 
+time.sleep(0.5)
 Submit = web.find_element_by_xpath('//*[@id="mG61Hd"]/div[2]/div/div[3]/div[1]/div/div/span') # used to find submit button
 Submit.click() # used to click submit button
