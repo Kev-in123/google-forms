@@ -29,8 +29,7 @@ def attendance():
 
   # You might ask why not find the button and click it. aw login won't let my code click the login button but the enter key works
 
-  # There is no confirm button in firefox unlinke chrome which makes automation easier won't tell you which lines go find out yourself not gonna spoon feed you people that much
-
+  # There is no confirm button in edge unlinke chrome which makes automation easier won't tell you which lines go find out yourself not gonna spoonfeed you people that much
 
   # the code below is determend on the form your teacher wants you to fill in but I will still explain the code below
 
