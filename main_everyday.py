@@ -30,10 +30,6 @@ def attendance():
 
   # You might ask why not find the button and click it. aw login won't let my code click the login button but the enter key works
 
-  time.sleep(1) # lets page load before continue running code or else error will occur 
-  confirm=web.find_element_by_xpath('//*[@id="view_container"]/div/div/div[2]/div/div[2]/div/div[1]/div/div/button/div[2]') # used to find confirm button
-  confirm.click() #used to click confirm button
-
   # the code below is determend on the form your teacher wants you to fill in but I will still explain the code below
 
   time.sleep(3) # lets page load before continue running code or else error will occur 
