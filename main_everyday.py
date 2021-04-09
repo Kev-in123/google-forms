@@ -48,11 +48,14 @@ def attendance():
   RadioCohort = web.find_element_by_xpath('//*[@id="mG61Hd"]/div[2]/div/div[2]/div[4]/div/div/div[2]/div/div[1]/div[1]/div[1]') # used to find cohort dropdown menu
   RadioCohort.click() # used to click and open cohort dropdown menu
 
+  time.sleep(0.1)
   Cohort= web.find_element_by_xpath('//*[@id="mG61Hd"]/div[2]/div/div[2]/div[4]/div/div/div[2]/div/div[2]/div[3]') # used to find your cohort
   Cohort.click() # used to select your cohort
 
+  time.sleep(0.5)
   Submit = web.find_element_by_xpath('//*[@id="mG61Hd"]/div[2]/div/div[3]/div[1]/div/div/span') # used to find submit button
   Submit.click() # used to click submit button
+  
 # to check if the form submission wwas successful
   time.sleep(2)
   try:
@@ -62,5 +65,4 @@ def attendance():
     print("Unable to submit form")
 # to schedule code
 # note: It uses 24 hour local (device) time and if its before 12:00 you must add a zero at the front (shown below)
-while True: # while loop so it runs every day instead of once at that time
-  schedule.every().day.at("08:45").do(attendance)
+schedule.every().day.at("08:45").do(attendance)
