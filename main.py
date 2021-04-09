@@ -28,6 +28,8 @@ password_textbox.send_keys(Keys.ENTER) # used to send data above
 
 # You might ask why not find the button and click it. aw login won't let my code click the login button but the enter key works
 
+# There is no confirm button in edge unlinke chrome which makes automation easier won't tell you which lines go find out yourself not gonna spoonfeed you people that much
+
 # the code below is determend on the form your teacher wants you to fill in but I will still explain the code below
 
 time.sleep(3) # lets page load before continue running code or else error will occur 
