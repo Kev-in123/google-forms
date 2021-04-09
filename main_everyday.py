@@ -9,8 +9,9 @@ def attendance():
 
   id = 'student id' # this is your student id
   passw = 'password' # this is your password
-
-  email='firstname.lastname@student.tdsb.on.ca' # this is your student email there might be a number
+  firstName = 'First name' # this is your first name
+  lastName = 'Last name' # this is your last name
+  email=f'{firstName}.{lastName}@student.tdsb.on.ca' # this is your student email there might be a number
 
   try:
     emailpath=web.find_element_by_xpath('//*[@id="identifierId"]') # uses "try... except..." to get the input box because you might get a different sign-in page (I found this problem before)
@@ -40,11 +41,9 @@ def attendance():
   idnum = web.find_element_by_xpath('//*[@id="mG61Hd"]/div[2]/div/div[2]/div[1]/div/div/div[2]/div/div[1]/div/div[1]/input') # used to find the textbox for your student id
   idnum.send_keys(id) # this is to send you student id
 
-  firstName = 'First name' # this is your first name
   first = web.find_element_by_xpath('//*[@id="mG61Hd"]/div[2]/div/div[2]/div[2]/div/div/div[2]/div/div[1]/div/div[1]/input') # used to find the textbox for your first name
   first.send_keys(firstName) # used to send first name
 
-  lastName = 'Last name' # this is your last name
   last = web.find_element_by_xpath('//*[@id="mG61Hd"]/div[2]/div/div[2]/div[3]/div/div/div[2]/div/div[1]/div/div[1]/input') # used to find the textbox for your last name
   last.send_keys(lastName) # used to send last name
 
