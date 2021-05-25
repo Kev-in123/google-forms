@@ -1,5 +1,6 @@
-from selenium import webdriver # first 3 lines are used to import stuff
-import time, schedule
+import time
+import schedule
+from selenium import webdriver 
 from selenium.webdriver.common.keys import Keys
 
 # defines a function so its easier to use
