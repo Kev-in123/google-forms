@@ -25,7 +25,7 @@ def attendance():
   username_textbox = web.find_element_by_xpath('//*[@id="UserName"]') # this is your student id 
   username_textbox.send_keys(id) # this is to send student id
 
-  password_textbox = web.find_element_by_xpath('//*[@id="Password"]') # this is your password 
+  password_textbox = web.find_element_by_xpath('//*[@id="Password"]')
   password_textbox.send_keys(passw) # this is to send password
   password_textbox.send_keys(Keys.ENTER) # used to send data above
 
