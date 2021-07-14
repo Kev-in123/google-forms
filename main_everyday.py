@@ -1,9 +1,11 @@
 import time
 import schedule
 import selenium
-from utils import get_data as user
+from utils import get_data
 from selenium import webdriver 
 from selenium.webdriver.common.keys import Keys
+
+user = get_data()
 
 web = webdriver.Firefox(executable_path="C:\\geckodriver.exe")
 web.get("https://forms.gle/Fccr1YANeRW6Usfu5")
@@ -11,7 +13,7 @@ id_ = user['id']
 passw = user['password']
 firstName = user['first']
 lastName = user['last']
-email=f'{firstName}.{lastName}@student.tdsb.on.ca' 
+email = f'{firstName}.{lastName}@student.tdsb.on.ca' 
 
 def attendance():
 
