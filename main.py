@@ -13,7 +13,7 @@ id_ = user['id']
 passw = user['password']
 firstName = user['first']
 lastName = user['last']
-email = f'{firstName}.{lastName}3@student.tdsb.on.ca'
+email = f'{firstName}.{lastName}@student.tdsb.on.ca'
 
 try:
   emailpath = web.find_element_by_xpath('//*[@id="identifierId"]')
