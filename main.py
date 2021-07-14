@@ -1,23 +1,25 @@
 import time
 import selenium
-from utils import get_data as user
+from utils import get_data
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
 web = webdriver.Firefox(executable_path="C:\\geckodriver.exe")
 web.get("https://forms.gle/Fccr1YANeRW6Usfu5")
 
+user = get_data()
+
 id_ = user['id']
 passw = user['password']
 firstName = user['first']
 lastName = user['last']
-
-email=f'{firstName}.{lastName}@student.tdsb.on.ca'
+email = f'{firstName}.{lastName}3@student.tdsb.on.ca'
 
 try:
-  emailpath=web.find_element_by_xpath('//*[@id="identifierId"]')
+  emailpath = web.find_element_by_xpath('//*[@id="identifierId"]')
+
 except:
-  emailpath=web.find_element_by_xpath('//*[@id="Email"]')
+  emailpath = web.find_element_by_xpath('//*[@id="Email"]')
   
 emailpath.send_keys(email)
 emailpath.send_keys(Keys.ENTER)
@@ -29,7 +31,7 @@ while True:
   except selenium.common.exceptions.NoSuchElementException:
     time.sleep(0.1)
 
-username_textbox.send_keys(id)
+username_textbox.send_keys(id_)
 
 password_textbox = web.find_element_by_xpath('//*[@id="Password"]')
 password_textbox.send_keys(passw)
@@ -43,7 +45,8 @@ while True:
   except selenium.common.exceptions.NoSuchElementException:
     time.sleep(0.1)
 
-idnum.send_keys(id)
+idnum.click()
+idnum.send_keys(id_)
 
 first = web.find_element_by_xpath('//*[@id="mG61Hd"]/div[2]/div/div[2]/div[2]/div/div/div[2]/div/div[1]/div/div[1]/input')
 first.send_keys(firstName)
