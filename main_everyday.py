@@ -1,5 +1,6 @@
 import time
 import schedule
+import selenium
 from utils import get_data as user
 from selenium import webdriver 
 from selenium.webdriver.common.keys import Keys
